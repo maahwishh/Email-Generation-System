@@ -45,8 +45,8 @@ pip install pandas==2.2.2
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-org/email-gen-system.git
-cd email-gen-system
+git clone https://github.com/maahwishh/Email-Generation-System.git
+cd Email-Generation-System
 ```
 2. Set your OpenAI API key:
 ```
