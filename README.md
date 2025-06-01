@@ -27,6 +27,7 @@ pip install pandas==2.2.2
 Python 3.9+
 pip (latest version)
 
+```
 pip install --upgrade \
   langchain langchain-community langchain-openai langgraph \
   openai gradio pandas matplotlib seaborn faiss-cpu \
