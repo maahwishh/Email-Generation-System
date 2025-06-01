@@ -71,8 +71,10 @@ The system uses a FAISS-based vector database for retrieving:
 
 ## 🛠 Troubleshooting
 
-graph TD
-    A[OpenAI key not found] --> B[Ensure OPENAI_API_KEY is set in os.environ]
-    C[Knowledge base empty] --> D[Check if _initialize_knowledge_base() ran successfully]
-    E[Gradio not launching] --> F[Update gradio to the latest version]
+| Problem              | Fix                                                   |
+|----------------------|--------------------------------------------------------|
+| `OpenAI key not found` | Ensure `OPENAI_API_KEY` is set in `os.environ`        |
+| `Knowledge base empty` | Check if `_initialize_knowledge_base()` ran successfully |
+| `Gradio not launching` | Update `gradio` to the latest version                |
+
 
