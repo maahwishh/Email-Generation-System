@@ -6,12 +6,12 @@ This system leverages a multi-agent architecture to intelligently generate high-
 
 ### 🚀 Features
 
-  🔟 Specialized AI agents for modular processing
-  🧠 RAG-enhanced insights from email best practices
-  🎯 Supports multiple email types (business, marketing, support, etc.)
-  🧩 Personalized content based on recipient profile
-  📊 Quality scoring and improvement suggestions
-  🌐 Intuitive Gradio interface for easy interaction
+  1. 🔟 Specialized AI agents for modular processing
+  2. 🧠 RAG-enhanced insights from email best practices
+  3. 🎯 Supports multiple email types (business, marketing, support, etc.)
+  4. 🧩 Personalized content based on recipient profile
+  5. 📊 Quality scoring and improvement suggestions
+  6. 🌐 Intuitive Gradio interface for easy interaction
 
 ## ⚙️ Installation & Setup
 
@@ -58,16 +58,14 @@ os.environ["OPENAI_API_KEY"] = "your-key-here"
 python main.py
 ```
 ## 🧠 System Architecture
-
-
 All agents operate on a shared EmailState and are orchestrated using LangGraph.
 
 ## 🧩 RAG Knowledge Base
 The system uses a FAISS-based vector database for retrieving:
- Subject line best practices
- Structure and flow patterns
- Personalization strategies
- Tone and emotional guidelines
+ 1. Subject line best practices
+ 2. Structure and flow patterns
+ 3. Personalization strategies
+ 4. Tone and emotional guidelines
 
 ## 🛠 Troubleshooting
 
@@ -77,4 +75,10 @@ The system uses a FAISS-based vector database for retrieving:
 | `Knowledge base empty` | Check if `_initialize_knowledge_base()` ran successfully |
 | `Gradio not launching` | Update `gradio` to the latest version                |
 
+## 📚 References
+
+1. LangChain Documentation
+2. OpenAI API Reference
+3. FAISS
+4. Gradio
 
