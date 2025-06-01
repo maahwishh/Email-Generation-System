@@ -16,7 +16,7 @@ This system leverages a multi-agent architecture to intelligently generate high-
 ### ⚙️ Installation & Setup
 
 Install all required libraries:
-
+```
 pip install --upgrade langchain langchain-community langchain-openai langgraph
 pip install --upgrade openai gradio pandas matplotlib seaborn faiss-cpu
 pip install --upgrade pydantic typing-extensions datetime
