@@ -70,9 +70,9 @@ The system uses a FAISS-based vector database for retrieving:
  Tone and emotional guidelines
 
 ## 🛠 Troubleshooting
-```
+
 graph TD
     A[OpenAI key not found] --> B[Ensure OPENAI_API_KEY is set in os.environ]
     C[Knowledge base empty] --> D[Check if _initialize_knowledge_base() ran successfully]
     E[Gradio not launching] --> F[Update gradio to the latest version]
-```
+
