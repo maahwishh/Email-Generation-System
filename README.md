@@ -13,7 +13,7 @@ This system leverages a multi-agent architecture to intelligently generate high-
   📊 Quality scoring and improvement suggestions
   🌐 Intuitive Gradio interface for easy interaction
 
-### ⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 Install all required libraries:
 ```
@@ -21,11 +21,17 @@ pip install --upgrade langchain langchain-community langchain-openai langgraph
 pip install --upgrade openai gradio pandas matplotlib seaborn faiss-cpu
 pip install --upgrade pydantic typing-extensions datetime
 pip install pandas==2.2.2
+```
+
 
 ### 📦 Requirements
 
 Python 3.9+
 pip (latest version)
+
+## 📥 Installation
+
+Run the following commands to install all required dependencies:
 
 ```
 pip install --upgrade \
@@ -34,3 +40,39 @@ pip install --upgrade \
   pydantic typing-extensions datetime
 
 pip install pandas==2.2.2
+```
+## 🔧 Setup
+
+1. Clone the repository:
+```
+git clone https://github.com/your-org/email-gen-system.git
+cd email-gen-system
+```
+2. Set your OpenAI API key:
+```
+import os
+os.environ["OPENAI_API_KEY"] = "your-key-here"
+```
+3. Launch the system:
+```
+python main.py
+```
+## 🧠 System Architecture
+
+
+All agents operate on a shared EmailState and are orchestrated using LangGraph.
+
+## 🧩 RAG Knowledge Base
+The system uses a FAISS-based vector database for retrieving:
+ Subject line best practices
+ Structure and flow patterns
+ Personalization strategies
+ Tone and emotional guidelines
+
+## 🛠 Troubleshooting
+```
+graph TD
+    A[OpenAI key not found] --> B[Ensure OPENAI_API_KEY is set in os.environ]
+    C[Knowledge base empty] --> D[Check if _initialize_knowledge_base() ran successfully]
+    E[Gradio not launching] --> F[Update gradio to the latest version]
+```
